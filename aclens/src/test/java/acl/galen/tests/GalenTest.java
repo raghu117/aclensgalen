@@ -45,7 +45,7 @@ public class GalenTest extends GalenSpecDef{
 	 */
 	@Test(alwaysRun=true)
 	public void chromeGalenTest() throws IOException, InterruptedException {
-		generateReport("chrome browser");
+		generateReport("Chrome browser");
 		openChromeBrowser();
 		verifyHomePageAndSearchPageUI("chrome");
 		callAfterMethod();
@@ -56,7 +56,7 @@ public class GalenTest extends GalenSpecDef{
 	 */
 	@Test(alwaysRun=true,priority=1)
 	public void firfoxGalenTest() throws IOException, InterruptedException {
-		generateReport("Mozilla FireFox browser");
+		generateReport("FireFox browser");
 		openFirefoxBrowser();
 		verifyHomePageAndSearchPageUI("mozilla");
 		callAfterMethod();
@@ -115,10 +115,7 @@ public class GalenTest extends GalenSpecDef{
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\main\\resource\\chromedriver.exe");
 		 //Create a Chrome Driver
         driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        //Set the browser size for desktop
-       // driver.manage().window().setSize(new Dimension(1200, 800));
-        
+        driver.manage().window().maximize();  
 	}
 	
 	/**
@@ -131,26 +128,7 @@ public class GalenTest extends GalenSpecDef{
 		// Create a Firefox Driver
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
-		// Set the browser size for desktop
-		//driver.manage().window().setSize(new Dimension(1200, 800));
 	
 	}
 	
-
-	
-	public void callmeForWaiting(long timeInMilliSeconds) {
-    	try {
-			Thread.sleep(timeInMilliSeconds);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-    }
-    
-    public WebElement waitForElement(String locator) {	    	
-         By by=By.cssSelector(locator);
-    	 WebElement element=new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfElementLocated(by)); 
-    	 
-    	 return element;
-    }
 }
