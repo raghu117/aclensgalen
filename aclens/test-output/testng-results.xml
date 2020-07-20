@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="57639" started-at="2020-07-20T16:39:31 IST" finished-at="2020-07-20T16:40:29 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="57639" started-at="2020-07-20T16:39:31 IST" finished-at="2020-07-20T16:40:29 IST">
+      <class name="acl.galen.tests.GalenTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:acl.galen.tests.GalenTest@6895a785]" name="beforeSuite" is-config="true" duration-ms="19" started-at="2020-07-20T16:39:31 IST" finished-at="2020-07-20T16:39:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:acl.galen.tests.GalenTest@6895a785]" name="beforeTest" is-config="true" duration-ms="1" started-at="2020-07-20T16:39:31 IST" finished-at="2020-07-20T16:39:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:acl.galen.tests.GalenTest@6895a785]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-20T16:39:31 IST" finished-at="2020-07-20T16:39:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="chromeGalenTest()[pri:0, instance:acl.galen.tests.GalenTest@6895a785]" name="chromeGalenTest" duration-ms="33228" started-at="2020-07-20T16:39:31 IST" finished-at="2020-07-20T16:40:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chromeGalenTest -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:acl.galen.tests.GalenTest@6895a785]" name="aftermethod" is-config="true" duration-ms="701" started-at="2020-07-20T16:40:04 IST" finished-at="2020-07-20T16:40:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:acl.galen.tests.GalenTest@6895a785]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-20T16:40:05 IST" finished-at="2020-07-20T16:40:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="firfoxGalenTest()[pri:1, instance:acl.galen.tests.GalenTest@6895a785]" name="firfoxGalenTest" duration-ms="22000" started-at="2020-07-20T16:40:05 IST" finished-at="2020-07-20T16:40:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firfoxGalenTest -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:acl.galen.tests.GalenTest@6895a785]" name="aftermethod" is-config="true" duration-ms="1193" started-at="2020-07-20T16:40:27 IST" finished-at="2020-07-20T16:40:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:acl.galen.tests.GalenTest@6895a785]" name="afterTest" is-config="true" duration-ms="472" started-at="2020-07-20T16:40:28 IST" finished-at="2020-07-20T16:40:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:acl.galen.tests.GalenTest@6895a785]" name="afterSuite" is-config="true" duration-ms="25191" started-at="2020-07-20T16:40:29 IST" finished-at="2020-07-20T16:40:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- acl.galen.tests.GalenTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
