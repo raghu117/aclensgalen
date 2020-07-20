@@ -2,29 +2,14 @@ package acl.galen.pages;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Random;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.opera.OperaDriver;
-import org.openqa.selenium.opera.OperaOptions;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.DataProvider;
 
 import com.galenframework.api.Galen;
 import com.galenframework.reports.GalenTestInfo;
@@ -43,7 +28,7 @@ public class GalenSpecDef {
 	LayoutReport layoutReport;
 
 	/**
-	 * Call me to create the Report
+	 *Generate Report
 	 */
 	public void generateReport(String browser) {
 		// Create a GalenTestInfo object
@@ -51,7 +36,7 @@ public class GalenSpecDef {
 	}
 
 	/**
-	 * call galen spec file by provided path
+	 * Call galen spec file by provided path
 	 */
 	public void verfiyPageVisualValidation(WebDriver driver, String Browser, String path, String layOutName) {
 		try {
@@ -68,7 +53,7 @@ public class GalenSpecDef {
 
 
 	/**
-	 * call me after method
+	 * After Method
 	 */
 	public void callAfterMethod() {
 		// Add test object to the tests list
@@ -93,7 +78,7 @@ public class GalenSpecDef {
 	}
 
 	/**
-	 * Navigate to checkout page
+	 * Navigate to Search Page
 	 * @throws InterruptedException 
 	 */
 	public void navigateToSearchPage(WebDriver driver) throws InterruptedException {

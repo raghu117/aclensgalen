@@ -2,13 +2,9 @@ package acl.galen.tests;
 
 import java.io.IOException;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
@@ -41,7 +37,7 @@ public class GalenTest extends GalenSpecDef{
 	}
 	
 	/**
-	 * Galen Layout Test Using Chrome
+	 * Galen test using Chrome browser
 	 */
 	@Test(alwaysRun=true)
 	public void chromeGalenTest() throws IOException, InterruptedException {
@@ -52,7 +48,7 @@ public class GalenTest extends GalenSpecDef{
 	}
 	
 	/**
-	 * Galen Layout Test Using Mozilla
+	 * Galen test using Firefox browser
 	 */
 	@Test(alwaysRun=true,priority=1)
 	public void firfoxGalenTest() throws IOException, InterruptedException {
@@ -89,6 +85,12 @@ public class GalenTest extends GalenSpecDef{
 	}
 	
 	
+	/**
+	 * Verify Visual elements on Home page and Search Page
+	 * @param browser
+	 * @throws IOException
+	 * @throws InterruptedException
+	 */
 	public void verifyHomePageAndSearchPageUI(String browser) throws IOException, InterruptedException {
 		// Open Home Page
 		openHomePage();
