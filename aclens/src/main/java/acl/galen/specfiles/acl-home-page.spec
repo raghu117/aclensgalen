@@ -26,11 +26,9 @@
 		css font-size is "20px"
 		right-of ReorderHere
 	SelectionReorderBar:
-		css background is "rgb(26,109,201)"
-		height 110 to 130px
+		css background is "rgba(18, 87, 164, 1)"
 	QuickSelectBar:
-		height 110 to 130px
-		width 110 to 130px
+		height 55px to 65px
 		below SelectionReorderBar
 		css background-color is "rgb(238,238,238)"
 	SocialFooter:
