@@ -30,9 +30,9 @@ public class GalenSpecDef {
 	/**
 	 *Generate Report
 	 */
-	public void generateReport(String browser) {
+	public void generateReport(String scriptName) {
 		// Create a GalenTestInfo object
-		test = GalenTestInfo.fromString(browser);
+		test = GalenTestInfo.fromString(scriptName);
 	}
 
 	/**
@@ -87,7 +87,7 @@ public class GalenSpecDef {
 		WebElement searchBox = driver.findElement(By.cssSelector("div.header-container input.search-input[name ='searchText']"));
 		searchBox.sendKeys("mens");
 		searchBox.sendKeys(Keys.ENTER);
-		Thread.sleep(5000);
+		Thread.sleep(7000);
 	}
 
 }

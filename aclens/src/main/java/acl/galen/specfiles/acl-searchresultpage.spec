@@ -27,11 +27,11 @@
 	new_customer_offer_text:
 		css font-size is "16px"
 		count any new_customer_offer_text is 1
-		css color is "rgba(33, 65, 133, 1)" 
+		color-scheme <6% #214185
 	on_all_contact_lense_text:
 		css font-size is "13.3px"
 		count any on_all_contact_lense_text is 1 
-		css color is "rgba(33, 65, 133, 1)"
+		color-scheme <6% #214185
 	search_box:
 		count any search_box is 1
 	product_matching_text:
@@ -39,22 +39,17 @@
 		height 20px
 		count any product_matching_text is 1
 		css font-size is "18px"
-		css color is "rgba(153, 179, 230, 1)"
 	sort_text:
 		width 30px
 		height 16px
 		count any sort_text is 1
 		css font-size is "14px"
-		css color is "rgba(33, 65, 133, 1)"
-			
 	sort_type_dropdown:
 		count any sort_type_dropdown is 1
 	result_for_page_text:
 		below sort_text
 		count any result_for_page_text is 1
 		css font-size is "12px"
-		css color is "rgba(0, 0, 0, 1)"
-			
 	page_size_drop_down:
 		width 80px
 		height 35px
@@ -63,13 +58,11 @@
 		width 310px
 		height 206px
 		count any product_img is 1
-
 	product_name:			
 		below product_img
 		width 310px
 		height 18px
 		count any product_img is 1
-		
 	free_shipping_banner:
 		count any free_shipping_banner is 1
 	instagram_icon: 
@@ -83,7 +76,6 @@
 		width 116px
 		height 18px
 		count any never_miss_text is 1
-		css color is "rgba(33, 65, 133, 1)" 
 	email_text_button:
 		width 215px
 		height 34px
@@ -92,7 +84,6 @@
 		width 160px
 		height 54px
 		count any email_text_button is 1
-		
 	follow_us:
 		below free_shipping_banner
 		css font-size is "18.72px"

@@ -25,7 +25,7 @@ public class GalenTest extends GalenSpecDef{
 	 */
 	@Test(alwaysRun=true)
 	public void chromeGalenTest() throws IOException, InterruptedException {
-		generateReport("Chrome browser");
+		generateReport("Home and Search Page UI on Chrome");
 		openChromeBrowser();
 		verifyHomePageAndSearchPageUI("chrome");
 		callAfterMethod();
@@ -34,9 +34,9 @@ public class GalenTest extends GalenSpecDef{
 	/**
 	 * Galen test using Firefox browser
 	 */
-	@Test(alwaysRun=true,priority=1)
+	@Test(alwaysRun=true)
 	public void firfoxGalenTest() throws IOException, InterruptedException {
-		generateReport("FireFox browser");
+		generateReport("Home and Search Page UI on Firefox");
 		openFirefoxBrowser();
 		verifyHomePageAndSearchPageUI("mozilla");
 		callAfterMethod();
@@ -78,10 +78,12 @@ public class GalenTest extends GalenSpecDef{
 		
 	/**
 	 * Open brand website
+	 * @throws InterruptedException 
 	 */
-	public void openHomePage() {
+	public void openHomePage() throws InterruptedException {
 		// Go to aclens.com
         driver.get("https://www.aclens.com/");	
+        Thread.sleep(5000);
 	}
     
 	/**
