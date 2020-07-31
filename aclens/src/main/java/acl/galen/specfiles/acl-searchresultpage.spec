@@ -73,12 +73,9 @@
 		count any twitter_icon is 1
 	never_miss_text: 
 		css font-size is "16px"
-		width 116px
-		height 18px
 		count any never_miss_text is 1
 	email_text_button:
 		width 215px
-		height 34px
 		count any email_text_button is 1
 	chat_text_container:
 		width 160px
@@ -86,5 +83,4 @@
 		count any email_text_button is 1
 	follow_us:
 		below free_shipping_banner
-		css font-size is "18.72px"
 		count any follow_us is 1
