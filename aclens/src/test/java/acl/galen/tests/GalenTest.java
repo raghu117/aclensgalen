@@ -21,22 +21,6 @@ public class GalenTest extends GalenSpecDef{
 	WebDriver driver;
 	
 	/**
-	 * Before test to represent start
-	 */
-	@BeforeMethod
-	public void beforeMethod(){
-		System.out.println("Before method");
-	}
-	
-	/**
-	 * Before test to represent start
-	 */
-	@BeforeTest
-	public void beforeTest(){
-		System.out.println("Before Test");
-	}
-	
-	/**
 	 * Galen test using Chrome browser
 	 */
 	@Test(alwaysRun=true)
@@ -74,15 +58,6 @@ public class GalenTest extends GalenSpecDef{
 		callAfterTest();
 	}
 	
-	@BeforeSuite(alwaysRun=true)
-	public void beforeSuite(){
-		System.out.println("before suite");
-	}
-	
-	@AfterSuite()
-	public void afterSuite() throws IOException, InterruptedException{
-		System.out.println("after suite");
-	}
 	
 	
 	/**
